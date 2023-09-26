@@ -1,5 +1,7 @@
 <template>
-  <div class="min-h-screen bg-zinc-100 dark:bg-zinc-900 dark:text-zinc-100">
+  <div
+    class="min-h-screen bg-gradient-to-t from-teal-900 to-indigo-900 dark:text-zinc-100"
+  >
     <AppHeader />
     <slot></slot>
     <AppFooter />

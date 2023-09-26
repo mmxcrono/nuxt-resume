@@ -12,10 +12,11 @@ const title = "My Resume - Home";
       <title>{{ title }}</title>
       <Meta name="description" :content="title" />
     </Head>
-    <main class="min-h-[300px] p-4 dark:bg-gray-900">
+
+    <main class="min-h-[300px] p-4">
       <h1>{{ title }}</h1>
       <section>
-        <p>This is my resume</p>
+        <p>About Hoang Nguyen</p>
       </section>
     </main>
   </div>

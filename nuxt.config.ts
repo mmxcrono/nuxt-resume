@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     apiSecret: "123",
     public: {
-      apiBase: "/api",
+      appName: "My Resume",
     },
   },
   devtools: { enabled: false },
