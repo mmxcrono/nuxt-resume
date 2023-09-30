@@ -1,11 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  runtimeConfig: {
-    apiSecret: "123",
-    public: {
-      appName: "My Resume",
-    },
-  },
   devtools: { enabled: false },
   vite: {
     vue: {
@@ -20,6 +14,10 @@ export default defineNuxtConfig({
     pageTransition: { name: "page", mode: "out-in" },
   },
   site: {
-    url: "http://localhost:3000",
+    url: "https://mmxcrono.github.io/",
+  },
+  ssr: true,
+  experimental: {
+    payloadExtraction: true,
   },
 });

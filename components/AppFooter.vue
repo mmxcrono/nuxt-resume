@@ -5,9 +5,11 @@
         role="navigation"
         class="flex flex-col gap-2 pt-2 text-center sm:text-right"
       >
-        <li><NuxtLink to="/" class="hover:text-sky-500">Home</NuxtLink></li>
+        <li><NuxtLink to="/" class="hover:text-sky-500">About Me</NuxtLink></li>
         <li>
-          <NuxtLink to="/about" class="hover:text-sky-500">About</NuxtLink>
+          <NuxtLink to="/experience" class="hover:text-sky-500"
+            >Experience</NuxtLink
+          >
         </li>
       </ul>
       <ul
