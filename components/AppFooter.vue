@@ -1,5 +1,5 @@
 <template>
-  <footer class="flex flex-col p-4 dark:text-zinc-400">
+  <footer class="flex flex-col p-4 text-zinc-400">
     <div class="flex flex-col sm:grid-cols-2 sm:flex-row sm:justify-evenly">
       <ul
         role="navigation"
@@ -28,6 +28,11 @@
             target="_blank"
             class="hover:text-sky-500"
             >GitHub</NuxtLink
+          >
+        </li>
+        <li>
+          <NuxtLink to="resume.pdf" target="_blank" class="hover:text-sky-500"
+            >Resume PDF</NuxtLink
           >
         </li>
       </ul>

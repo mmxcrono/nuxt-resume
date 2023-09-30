@@ -15,8 +15,11 @@ export default defineNuxtConfig({
       mergeProps: true,
     },
   },
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/robots", "nuxt-simple-sitemap"],
   app: {
     pageTransition: { name: "page", mode: "out-in" },
+  },
+  site: {
+    url: "http://localhost:3000",
   },
 });
