@@ -1,3 +1,3 @@
 export default defineAppConfig({
-  appName: "Hoang Nguyen",
+  myName: "Hoang Nguyen",
 });

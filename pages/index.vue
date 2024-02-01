@@ -1,7 +1,8 @@
 <script setup lang="ts">
-const page = "About Me";
-const title = `Hoang Nguyen - ${page}`;
-const description = `${title}, a Full-Stack Developer with 9 years experience`;
+const config = useAppConfig();
+const page = "About";
+const title = `${config.myName} - ${page}`;
+const description = `Born in USA, ${config.myName} is a full-stack software engineer with 10 years of experience`;
 
 useHead({
   title,
@@ -25,12 +26,12 @@ useServerSeoMeta({
 
 <template>
   <main class="min-h-[300px] p-4">
-    <h1 class="my-8 text-xl sm:text-4xl">{{ page }}</h1>
+    <PageTitle :page="page"></PageTitle>
 
     <section class="rounded-md bg-gray-300 bg-opacity-10 p-4">
       <ul class="list-inside list-disc pl-8 -indent-8">
         <li>US Citizen</li>
-        <li>Full Stack Engineer for over 9 years</li>
+        <li>Full Stack Engineer for over 10 years</li>
         <li>
           Received B.S. in Computer Science in 2012 from
           <NuxtLink
@@ -52,18 +53,10 @@ useServerSeoMeta({
       </ul>
     </section>
 
-    <h2 class="my-4 text-lg sm:text-2xl">Top Skills</h2>
+    <h2 class="my-4 text-lg sm:text-2xl">Most Recent Skills</h2>
 
-    <section class="rounded-md bg-gray-300 bg-opacity-10 p-4">
+    <section class="rounded-md bg-gray-300 bg-opacity-10 p-4 sm:columns-3">
       <ul class="list-inside list-disc pl-2">
-        <li>
-          <NuxtLink
-            to="https://www.typescriptlang.org/"
-            target="_blank"
-            class="font-bold text-sky-200"
-            >TypeScript</NuxtLink
-          >
-        </li>
         <li>
           <NuxtLink
             to="https://www.php.net/"
@@ -74,18 +67,18 @@ useServerSeoMeta({
         </li>
         <li>
           <NuxtLink
-            to="https://vuejs.org/"
+            to="https://phpunit.de/"
             target="_blank"
             class="font-bold text-sky-200"
-            >Vue</NuxtLink
+            >PHPUnit</NuxtLink
           >
         </li>
         <li>
           <NuxtLink
-            to="https://react.dev/"
+            to="https://www.typescriptlang.org/"
             target="_blank"
             class="font-bold text-sky-200"
-            >React</NuxtLink
+            >TypeScript</NuxtLink
           >
         </li>
         <li>
@@ -106,6 +99,14 @@ useServerSeoMeta({
         </li>
         <li>
           <NuxtLink
+            to="https://vuejs.org/"
+            target="_blank"
+            class="font-bold text-sky-200"
+            >Vue</NuxtLink
+          >
+        </li>
+        <li>
+          <NuxtLink
             to="https://vitejs.dev/"
             target="_blank"
             class="font-bold text-sky-200"
@@ -122,26 +123,26 @@ useServerSeoMeta({
         </li>
         <li>
           <NuxtLink
-            to="https://phpunit.de/"
-            target="_blank"
-            class="font-bold text-sky-200"
-            >PHPUnit</NuxtLink
-          >
-        </li>
-        <li>
-          <NuxtLink
             to="https://www.docker.com/"
             target="_blank"
             class="font-bold text-sky-200"
             >Docker</NuxtLink
           >
         </li>
+        <li>
+          <NuxtLink
+            to="https://www.terraform.io/"
+            target="_blank"
+            class="font-bold text-sky-200"
+            >Terraform with AWS</NuxtLink
+          >
+        </li>
       </ul>
     </section>
 
-    <h2 class="my-4 text-lg sm:text-2xl">Learning</h2>
+    <h2 class="my-4 text-lg sm:text-2xl">Learning Next</h2>
 
-    <section class="rounded-md bg-gray-300 bg-opacity-10 p-4">
+    <section class="rounded-md bg-gray-300 bg-opacity-10 p-4 sm:columns-3">
       <ul class="list-inside list-disc pl-2">
         <li>
           <NuxtLink
@@ -157,14 +158,6 @@ useServerSeoMeta({
             target="_blank"
             class="font-bold text-sky-200"
             >ChatGPT</NuxtLink
-          >
-        </li>
-        <li>
-          <NuxtLink
-            to="https://kubernetes.io/"
-            target="_blank"
-            class="font-bold text-sky-200"
-            >Kubernetes</NuxtLink
           >
         </li>
         <li>

@@ -1,7 +1,8 @@
 <script setup lang="ts">
+const config = useAppConfig();
 const page = "Experience";
-const title = `Hoang Nguyen - ${page}`;
-const description = `${title} Prior job experience at Slickdeals, Smart Software Solutions, and Evisions`;
+const title = `${config.myName} - ${page}`;
+const description = `${config.myName} has over 10 years of full-stack software development work experience`;
 useHead({
   title,
   meta: [
@@ -24,7 +25,7 @@ useServerSeoMeta({
 
 <template>
   <main class="min-h-[300px] p-4">
-    <h1 class="my-8 text-4xl">{{ page }}</h1>
+    <PageTitle :page="page"></PageTitle>
 
     <section class="mt-4 rounded-md bg-gray-300/10 p-4">
       <div class="flex justify-between text-lg sm:text-2xl">
