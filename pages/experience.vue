@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const config = useAppConfig();
 const page = "Experience";
-const title = `${config.myName} - ${page}`;
+const title = `${config.appName} - ${page}`;
 const description = `${config.myName} has over 10 years of full-stack software development work experience`;
 useHead({
   title,

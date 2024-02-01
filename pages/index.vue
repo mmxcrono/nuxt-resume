@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const config = useAppConfig();
 const page = "About";
-const title = `${config.myName} - ${page}`;
+const title = `${config.appName} - ${page}`;
 const description = `Born in USA, ${config.myName} is a full-stack software engineer with 10 years of experience`;
 
 useHead({
@@ -44,7 +44,7 @@ useServerSeoMeta({
         <li>
           Starting a new opportunity soon at
           <NuxtLink
-            to="https://traderinteractive.com"
+            to="https://www.traderinteractive.com"
             target="_blank"
             class="font-bold text-sky-200"
             >Trader Interactive</NuxtLink
