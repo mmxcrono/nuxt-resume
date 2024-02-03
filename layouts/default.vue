@@ -4,6 +4,7 @@
   >
     <div class="mx-auto max-w-5xl">
       <AppHeader />
+      <AvatarBanner />
       <slot></slot>
       <AppFooter />
     </div>
