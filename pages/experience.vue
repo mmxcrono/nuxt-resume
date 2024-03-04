@@ -25,7 +25,7 @@ useServerSeoMeta({
 
 <template>
   <main class="min-h-[300px] p-4">
-    <PageTitle :page="page"></PageTitle>
+    <PageTitle :page="page" />
 
     <section class="mt-4 rounded-md bg-gray-300/10 p-4">
       <div class="flex justify-between text-lg sm:text-2xl">
