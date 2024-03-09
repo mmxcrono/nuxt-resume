@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const { data } = await useFetch("/api/recent-skills");
-const config = useAppConfig();
+const { appName, myName, aboutInfo } = useAppConfig();
 const page = "About";
-const title = `${config.appName} - ${page}`;
-const description = `Born in USA, ${config.myName} is a full-stack software engineer with 10 years of experience`;
+const title = `${appName} - ${page}`;
+const description = `${myName}'s resume, skills, and education`;
 
 useHead({
   title,
@@ -31,15 +31,16 @@ useServerSeoMeta({
 
     <section class="rounded-md bg-gray-300 bg-opacity-10 p-4">
       <ul class="list-inside list-disc pl-8 -indent-8">
-        <li>US Citizen</li>
-        <li>Full Stack Engineer for over 10 years</li>
-        <li>
-          Received B.S. in Computer Science in 2012 from
+        <li v-for="(item, index) in aboutInfo.items" :key="index">
+          {{ item }}
+        </li>
+        <li v-if="aboutInfo.degree">
+          {{ aboutInfo.degree.name }} from
           <NuxtLink
-            to="https://www.cpp.edu"
+            :to="aboutInfo.degree.college.link"
             target="_blank"
             class="font-bold text-sky-200"
-            >Cal Poly Pomona</NuxtLink
+            >{{ aboutInfo.degree.college.name }}</NuxtLink
           >
         </li>
       </ul>
