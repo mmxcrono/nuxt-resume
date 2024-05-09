@@ -12,6 +12,9 @@ export default defineNuxtConfig({
       mergeProps: true,
     },
   },
+  vue: {
+    propsDestructure: true,
+  },
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/robots", "nuxt-simple-sitemap"],
   app: {
     pageTransition: { name: "page", mode: "out-in" },

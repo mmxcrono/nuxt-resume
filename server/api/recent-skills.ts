@@ -1,4 +1,9 @@
-export default defineEventHandler(() => {
+export type Skill = {
+  link: string;
+  name: string;
+};
+
+export default defineEventHandler((): Skill[] => {
   return [
     {
       link: "https://phpunit.de/",
@@ -46,7 +51,11 @@ export default defineEventHandler(() => {
     },
     {
       link: "https://laravel.com/",
-      name: "Laravel 10",
+      name: "Laravel",
+    },
+    {
+      link: "https://k9scli.io/",
+      name: "k9s",
     },
   ];
 });
