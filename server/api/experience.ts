@@ -3,6 +3,46 @@ import { Experience } from "~/types";
 export default defineEventHandler(
   (): Array<Experience> => [
     {
+      title: "Senior Software Engineer",
+      company: "Trader Interactive",
+      location: "Remote",
+      dates: "October 2023 - Present",
+      items: [
+        "Lead greenfield SEO and site performance initiatives with modern frameworks and",
+        "infrastructure",
+        "Create SSR skeletons and content for all marketplace realms",
+        "Create and maintain clean, well-documented code and unit tests for 100% coverage",
+        "Configure and deploy Docker containers in AWS EKS and ECS",
+        "Create Elasticsearch indexes and scheduled jobs to import data from MariaDB",
+        "Meet weekly with engineers for planning and mentoring",
+      ],
+      links: [
+        {
+          name: "Trader Interactive",
+          link: "https://traderinteractive.com/",
+        },
+      ],
+      skills: [
+        "Nuxt",
+        "Vue",
+        "SCSS",
+        "TypeScript",
+        "REST API",
+        "SEO",
+        "PHP",
+        "PHPUnit",
+        "Laravel",
+        "Elasticsearch",
+        "MariaDB",
+        "Docker",
+        "AWS EKS",
+        "AWS ECS",
+        "Terraform",
+        "Kubernetes",
+        "K9s",
+      ],
+    },
+    {
       title: "Sr. Engineer, Full Stack",
       company: "Slickdeals",
       location: "Remote",
